@@ -8,7 +8,7 @@ import { useColapse } from "../hooks/useColapse";
 const Search = () => {
   const [search, setSearch] = useState("");
   const [show, setShow] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     if (search.length > 0) {
